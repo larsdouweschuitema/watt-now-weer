@@ -1,0 +1,20 @@
+{
+  "name": "watt-now-weer",
+  "version": "1.0.0",
+  "description": "Real-Time Dashboard for Watt Now",
+  "main": "index.js",
+  "scripts": {},
+  "repository": "larsdouweschuitema/watt-now-weer",
+  "author": "Lars Douwe Schuitema",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larsdouweschuitema/watt-now-weer/issues"
+  },
+  "homepage": "https://github.com/larsdouweschuitema/watt-now-weer#readme",
+  "devDependencies": {
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "space": true
+  }
+}
