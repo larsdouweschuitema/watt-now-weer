@@ -50,3 +50,8 @@ main > section:last-of-type {
     width: 700px;
     height: 500px;
 }
+
+/* .leaflet-marker-icon {
+    width: 25px;
+    height: 25px;
+} */
