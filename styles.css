@@ -20,3 +20,8 @@ html {
     font-family: var(--text-font);
     color: var(--primary-dark);
 }
+
+canvas {
+    background-image: url('/canvas-placeholder.svg');
+    background-size: cover;
+}
