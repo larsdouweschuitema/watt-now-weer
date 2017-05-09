@@ -28,6 +28,5 @@ export default function initMap(element) {
   `);
   L.marker([150, 75], {icon: iconFood}).addTo(map).bindPopup('I\'m another marker');
 
-
   map.fitBounds(bounds);
 }
