@@ -1,6 +1,7 @@
 export default function initMap(element) {
   const map = L.map('map', {
-    crs: L.CRS.Simple
+    crs: L.CRS.Simple,
+    minZoom: 1
   });
 
   const bounds = [[0, 0], [200, 400]];
