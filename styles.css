@@ -1,0 +1,22 @@
+:root {
+    --primary-dark: #060c36;
+    --primary-light: #f8f9fb;
+    --accent-blue: #00abeb;
+    --accent-green: #27c86a;
+    --accent-yellow: #f2c610;
+    --accent-red: #f12d4b;
+    --display-font: 'Dosis', 'Gill Sans', system-ui;
+    --text-font: 'Roboto', system-ui;
+}
+
+* {
+    font-family: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+}
+
+html {
+    font-family: var(--text-font);
+    color: var(--primary-dark);
+}
