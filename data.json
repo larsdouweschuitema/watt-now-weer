@@ -1,0 +1,21 @@
+{
+  "map": {
+    "objects": [
+      {
+        "name": "Generator",
+        "size": 10
+      },
+      {
+        "name": "Hamburger Tent",
+        "size": 30,
+        "electricity": 5
+      }
+    ]
+  },
+  "charts": {
+    "generators": {
+      "labels": ["Monday", "Tueseday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "usage": [25, 10, 80, 25, 25, 60, 30]
+    }
+  }
+}
