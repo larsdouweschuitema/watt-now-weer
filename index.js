@@ -1,3 +1,3 @@
-import {setup as setupCanvas} from './canvas.js';
+import initMap from './map.js';
 
-setupCanvas(document.querySelector('canvas'));
+initMap(document.getElementById('map'));

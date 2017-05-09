@@ -20,3 +20,13 @@ html {
     font-family: var(--text-font);
     color: var(--primary-dark);
 }
+
+#map {
+    width: 700px;
+    height: 500px;
+}
+
+/* .leaflet-marker-icon {
+    width: 25px;
+    height: 25px;
+} */
