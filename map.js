@@ -17,7 +17,7 @@ export default function initMap(element) {
   const iconEnergy = new marker({iconUrl: '/img/icon-energy.svg'});
   const iconFood = new marker({iconUrl: '/img/icon-food.svg'});
 
-  // Radius around powerzone
+  // Radius around powerzone 3
   L.circle([100, 200], {
     color: 'grey',
     fillColor: 'grey',
@@ -33,6 +33,42 @@ export default function initMap(element) {
     <dt>Generatoren</dt>
     <dd>Type A (3)</dd>
     <dd>Type B (1)</dd>
+  </dl>
+  `);
+
+  // Radius powerzone 2
+  L.circle([150, 310], {
+    color: 'grey',
+    fillColor: 'grey',
+    fillOpacity: 0.3,
+    radius: 50
+  }).addTo(map);
+
+  L.marker([150, 310], {icon: iconEnergy}).addTo(map).bindPopup(`
+  <h3>Powerzone #2</h3>
+  <dl>
+    <dt>Verbruik</dt>
+    <dd>Overkill</dd>
+    <dt>Generatoren</dt>
+    <dd>Type A (2)</dd>
+  </dl>
+  `);
+
+  // Radius powerzone 1
+  L.circle([50, 320], {
+    color: 'grey',
+    fillColor: 'grey',
+    fillOpacity: 0.3,
+    radius: 50
+  }).addTo(map);
+
+  L.marker([50, 320], {icon: iconEnergy}).addTo(map).bindPopup(`
+  <h3>Powerzone #1</h3>
+  <dl>
+    <dt>Verbruik</dt>
+    <dd>Matig</dd>
+    <dt>Generatoren</dt>
+    <dd>Type D (3)</dd>
   </dl>
   `);
 
