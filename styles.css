@@ -98,3 +98,10 @@ main > section:last-of-type {
     width: 773px;
     height: 500px;
 }
+
+#graph {
+    position: relative;
+    right: 124px;
+    z-index: -1;
+    bottom: 14px;
+}
