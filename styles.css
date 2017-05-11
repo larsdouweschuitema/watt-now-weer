@@ -114,3 +114,22 @@ main > section:last-of-type {
     z-index: -1;
     bottom: 14px;
 }
+
+#iconlist {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+#iconlist li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+#iconlist img {
+    width: 2em;
+}
