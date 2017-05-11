@@ -88,6 +88,15 @@ main > section {
 
 main > section:first-of-type {
     height: 500px;
+    position: relative;
+}
+
+main > section:first-of-type > a {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    z-index: 500;
+    width: 2em;
 }
 
 main > section:last-of-type {
