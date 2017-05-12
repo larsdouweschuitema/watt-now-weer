@@ -24,14 +24,19 @@ During the building of the festival and during the actual festival they can use 
 - [ ] Manage charts layouts to your own wishes
 
 ## Design proposal
-![Console](readme_img/console.png)
-
-![Unpowered](readme_img/unpowered.png)
-
-![Map](readme_img/map.png)
-
+_Planning #1 — User drags objects to map_
 ![DragnDrop](readme_img/dragndrop.png)
 
+_Planning #2 — Overview of all objects with notifications_
+![Console](readme_img/console.png)
+
+_Live #1 — Some objects aren't connected to a power source_
+![Unpowered](readme_img/unpowered.png)
+
+_Live #2 — Overview of power usage_
+![Map](readme_img/map.png)
+
+_Expectation — Expected values over time_
 ![Prognose](readme_img/prognose.png)
 
 ## Installation
