@@ -1,4 +1,5 @@
-# Watt Now Weer
+![WattNowWeer Logo](readme_img/wattnouweer.png)
+
 A real-time dashboard for organisators of festivals allowing them to create the most cost-effective planning for their festival. Users can collaborate before and during the festival. Create a map that suits the needs of your festival. Then collaborate during the festival by watching real-time statistics, allowing the user to optimize the map during the festival.
 
 ## Features
@@ -15,9 +16,15 @@ An organisator of a festival wants to lower the costs of the electricity, and he
 During the building of the festival and during the actual festival they can use their iPads to use the dashboard, and check out real-time statistics. This allows them to analyse and future improve their festivals to have the most efficient and cost-effective setup.
 
 ## Wish list
-* Create multiple festival setups
-* Create teams with privileges allowing them to work on different projects
-* Chat allowing them to communicate on the dashboard itself
+* Create and manage multiple festival setups
+* Create and manage teams to collaborate on different festival projects
+* Real-time chat allowing users to communicate in the dashboard
+* Manage charts layouts to your own wishes
+
+## Screenshots
+![Map](readme_img/map.png)
+
+![Console](readme_img/console.png)
 
 ## Installation
 ```bash
