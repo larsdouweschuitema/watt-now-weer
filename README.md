@@ -1,4 +1,5 @@
-# Watt Now Weer
+![WattNowWeer Logo](readme_img/wattnouweer.png)
+
 A real-time dashboard for organisators of festivals allowing them to create the most cost-effective planning for their festival. Users can collaborate before and during the festival. Create a map that suits the needs of your festival. Then collaborate during the festival by watching real-time statistics, allowing the user to optimize the map during the festival.
 
 ## Features
