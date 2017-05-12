@@ -25,7 +25,7 @@ export default function initMap(element) {
     radius: 50
   }).addTo(map);
 
-  L.marker([100, 200], {icon: iconEnergy}).addTo(map).bindPopup(`
+  L.marker([100, 200], {icon: iconEnergy, draggable: true}).addTo(map).bindPopup(`
   <h3>Powerzone #3</h3>
   <dl>
     <dt>Verbruik</dt>
@@ -44,7 +44,7 @@ export default function initMap(element) {
     radius: 50
   }).addTo(map);
 
-  L.marker([150, 310], {icon: iconEnergy}).addTo(map).bindPopup(`
+  L.marker([150, 310], {icon: iconEnergy, draggable: true}).addTo(map).bindPopup(`
   <h3>Powerzone #2</h3>
   <dl>
     <dt>Verbruik</dt>
@@ -62,7 +62,7 @@ export default function initMap(element) {
     radius: 50
   }).addTo(map);
 
-  L.marker([50, 320], {icon: iconEnergy}).addTo(map).bindPopup(`
+  L.marker([50, 320], {icon: iconEnergy, draggable: true}).addTo(map).bindPopup(`
   <h3>Powerzone #1</h3>
   <dl>
     <dt>Verbruik</dt>
@@ -72,7 +72,7 @@ export default function initMap(element) {
   </dl>
   `);
 
-  L.marker([150, 75], {icon: iconFood}).addTo(map).bindPopup('I\'m another marker');
+  L.marker([150, 75], {icon: iconFood, draggable: true}).addTo(map).bindPopup('I\'m another marker');
 
   map.fitBounds(bounds);
 }

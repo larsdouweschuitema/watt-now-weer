@@ -19,7 +19,7 @@
         crossorigin="">
     </script>
 </head>
-<body class="index">
+<body class="edit">
     <section>
         <div>
             <img src="/logo.svg" role="presentation"/>
@@ -27,7 +27,7 @@
         </div>
         <nav>
             <ul>
-                <li class="active"><a href="">Live</a></li>
+                <li class="active"><a href="/">Live</a></li>
                 <li><a href="">Prognose</a></li>
             </ul>
         </nav>
@@ -35,15 +35,13 @@
     <main>
         <section>
             <div id="map"></div>
-            <a href="/edit"><img src="/img/settings.svg"></a>
         </section>
         <section>
-            <section>
-                <canvas id="graph" width="900" height="300"></canvas>
-            </section>
-            <section>
-                <!-- Objects -->
-            </section>
+            <ul id="iconlist">
+                <li><img src="/img/icon-energy.svg" draggable="true">Generator</li>
+                <li><img src="/img/icon-food.svg" draggable="true">Foodstand</li>
+                <li><img src="/img/icon-stage.svg" draggable="true">Stage</li>
+            </ul>
         </section>
     </main>
 </body>

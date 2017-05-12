@@ -88,6 +88,15 @@ main > section {
 
 main > section:first-of-type {
     height: 500px;
+    position: relative;
+}
+
+main > section:first-of-type > a {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    z-index: 500;
+    width: 2em;
 }
 
 main > section:last-of-type {
@@ -97,4 +106,30 @@ main > section:last-of-type {
 #map {
     width: 773px;
     height: 500px;
+}
+
+#graph {
+    position: relative;
+    right: 124px;
+    z-index: -1;
+    bottom: 14px;
+}
+
+#iconlist {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+#iconlist li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+#iconlist img {
+    width: 2em;
 }

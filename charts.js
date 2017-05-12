@@ -1,38 +1,61 @@
 export function setup(charts) {
-  const myRequest = new Request('data.json');
-  fetch('/data.json')
-    .then(
-      response => {
-        if (response.status !== 200) {
-          console.log('blegh');
-          return;
-        }
+  const ctx = document.getElementById('graph').getContext('2d');
 
-        response.json().then(data => {
-          const ctx = document.getElementById("myChart");
-          const myChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-              labels: data.charts.generators.labels,
-              datasets:
-              [
-                {
-                  label: 'Stroomverbruik',
-                  fillColor: 'rgba(172,194,132,0.4)',
-                  strokeColor: '#ACC26D',
-                  pointColor: '#fff',
-                  pointStrokeColor: '#9DB86D',
-                  pointBorderColor: 'rgba(75,192,192,1)',
-                  data: data.charts.generators.usage
-                }
-              ]
-            },
-            options: {
-              responsive: true,
-              maintainAspectRatio: false
-            }
-          });
-        });
+  const startingData = {
+    labels: [],
+    datasets: [
+      {
+        fillColor: 'transparent',
+        strokeColor: '#f12d4b88',
+        pointColor: 'transparent',
+        pointStrokeColor: 'transparent',
+        data: []
+      },
+      {
+        fillColor: 'transparent',
+        strokeColor: '#f12d4b',
+        pointColor: 'transparent',
+        pointStrokeColor: 'transparent',
+        data: []
+      },
+      {
+        fillColor: 'transparent',
+        strokeColor: '#f12d4b',
+        pointColor: 'transparent',
+        pointStrokeColor: 'transparent',
+        data: []
       }
-    );
+    ]
+  };
+
+  const options = {
+    animation: false,
+    scaleOverride: true,
+    scaleSteps: 8,
+    scaleStepWidth: 10000,
+    scaleStartValue: 0,
+
+    scales: {
+      xAxes: [{
+        display: false
+      }]
+    },
+    legend: {
+      display: false
+    }
+  };
+
+  let count = 0;
+
+  const chart = new Chart(ctx).Line(startingData, options);
+
+  const ws = new WebSocket('ws://power.rijks.website:80');
+
+  ws.onmessage = function (message) {
+    chart.addData(JSON.parse(message.data), '');
+    if (count > 100) {
+      chart.removeData();
+    }
+    count++;
+  }
 }
