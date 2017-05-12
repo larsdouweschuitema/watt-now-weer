@@ -21,6 +21,11 @@ During the building of the festival and during the actual festival they can use 
 * Real-time chat allowing users to communicate in the dashboard
 * Manage charts layouts to your own wishes
 
+## Screenshots
+![Map](readme_img/map.png)
+
+![Console](readme_img/console.png)
+
 ## Installation
 ```bash
 $ git clone https://github.com/larsdouweschuitema/watt-now-weer.git
