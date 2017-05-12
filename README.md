@@ -41,10 +41,32 @@ $ git clone https://github.com/larsdouweschuitema/watt-now-weer.git
 
 The interactive demo is a static website. You'll need a simple webserver like [`http-server`](npmjs.org/packages/http-server) to serve the files.
 
+## Prototype tests
+### Leaflet
+> [Leaflet](http://leafletjs.com/) is designed with simplicity, performance and usability in mind. It works efficiently across all major desktop and mobile platforms, can be extended with lots of plugins, has a beautiful, easy to use and well-documented API and a simple, readable source code that is a joy to contribute to.
+
+![Leaflet Screenshot](readme_img/leaflet.png)
+
+Leaflet has proven itself to be the ideal map library to work with in this concept. It's very open and flexible api provides us with easy ways to import custom maps and grid coordinates (ideal for uploading festival maps). Leaflets marker api provides us with the means to create custom marker objects and update these on the fly.
+
+http://leafletjs.com/
+
+### GraphJS
+While GraphJS's initial setup is very easy, it's extensibility and api leave some things to be desired. However, we were able to create a very simple (axis-less) graph for demo purposes for now for which the data was provided by [our custom made fake-power-data-generator plugin](https://github.com/rijkvanzanten/random-power-data)
+
+We wouldn't use GraphJS to implement such a feature in real-life but probably move to a more feature-rich option like [D3.js](https://d3js.org/)
+
+![GraphJS Screenshot](readme_img/graphjs.png)
+
+http://www.chartjs.org/
+
+### Chart Data
+The data which is displayed in the charts will be provided by actual measurement units implemented and provided by Watt Now. For this demo, we've created a small random-data generator api which provides us with somewhat realistically acting power usage statistics. The api works over websockets and can be accessed via `ws://power.rijks.website`. The code used to generate this data has been open sourced and can be accessed through the [`random-power-data`](https://github.com/rijkvanzanten/random-power-data) repository.
+
+
 ## Team
 ![Rijk van Zanten](https://avatars0.githubusercontent.com/u/9141017?v=3&s=460) | ![Lars Schuitema](https://avatars1.githubusercontent.com/u/8817968?v=3&s=460)
 ---|---
 [Rijk van Zanten](https://github.com/rijkvanzanten) | [Lars Schuitema](https://github.com/larsdouweschuitema)
-
 ## Licenses
 MIT © Lars Douwe Schuitema
