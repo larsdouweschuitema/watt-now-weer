@@ -20,6 +20,9 @@ An organisator of a festival wants to lower the costs of the electricity, and he
 During the building of the festival and during the actual festival they can use their iPads to use the dashboard, and check out real-time statistics. This allows them to analyse and future improve their festivals to have the most efficient and cost-effective setup.
 
 ## Wish list
+* Create multiple festival setups
+* Create teams with privileges allowing them to work on different projects
+* Chat allowing them to communicate on the dashboard itself
 
 ## Team
 ![Rijk van Zanten](https://avatars0.githubusercontent.com/u/9141017?v=3&s=460) | ![Lars Schuitema](https://avatars1.githubusercontent.com/u/8817968?v=3&s=460)
