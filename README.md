@@ -32,6 +32,8 @@ During the building of the festival and during the actual festival they can use 
 
 ![DragnDrop](readme_img/dragndrop.png)
 
+![Prognose](readme_img/prognose.png)
+
 ## Installation
 ```bash
 $ git clone https://github.com/larsdouweschuitema/watt-now-weer.git
