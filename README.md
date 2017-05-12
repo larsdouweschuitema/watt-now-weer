@@ -7,6 +7,7 @@ A real-time dashboard for organisators of festivals allowing them to create the 
 * [x] Console containing error, info and success messages
 * [x] Generate expectation report based on the created map
 * [x] Real-time charts before and during the festival
+* [x] Web Sockets allowing you to collaborate real-time
 
 ## Installation
 ```bash
