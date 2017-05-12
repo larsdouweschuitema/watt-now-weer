@@ -22,9 +22,13 @@ During the building of the festival and during the actual festival they can use 
 * Manage charts layouts to your own wishes
 
 ## Screenshots
+![Console](readme_img/console.png)
+
+![Unpowered](readme_img/unpowered.png)
+
 ![Map](readme_img/map.png)
 
-![Console](readme_img/console.png)
+![DragnDrop](readme_img/dragndrop.png)
 
 ## Installation
 ```bash
