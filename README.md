@@ -1,5 +1,12 @@
-# Watt Now Weer - Documentation
+# Watt Now Weer
+A real-time dashboard for organisators of festivals allowing them to create the most cost-effective planning for their festival. Users can collaborate before and during the festival. First they could create a planning that suits their needs. During the festival they can watch real-time charts giving statistics about the objects usage and costs.
+
 ## Features
+* [x] Map overview including scale, zoom and drag'n drop functionalities
+* [x] Build tool to place and configure objects (e.g. radius, electricity usage, costs)
+* [x] Console containing error, info and success messages
+* [x] Generate expectation report based on the created map
+* [x] Real-time charts before and during the festival
 
 ## Installation
 ```bash
